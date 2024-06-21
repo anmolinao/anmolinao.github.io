@@ -1,0 +1,408 @@
+// estilos.scss
+
+@import 'variables'; // Importa el archivo de variables
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+   /* Ajustes para centrar el logo y el navbar */
+   .navbar-brand {
+    margin: 0 auto; /* Centra el logo horizontalmente */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Empuja los enlaces a la derecha */
+}
+
+.navbar {
+    justify-content: center; /* Ajusta el contenido del navbar al centro */
+}
+
+/* Cambiar color de fondo y color de texto */
+.navbar {
+    background-color: $color-dark; /* Fondo oscuro */
+}
+
+.navbar-nav .nav-link {
+    color: $color-text !important; /* Color de texto blanco */
+}
+
+       header {
+    font-family: $font-family-body
+}
+
+body {
+    font-family: $font-family-heading;
+    color:$color-text-light;}
+ 
+    .navbar-nav .nav-link {
+        color:$color-text-light !important; /* Cambia el color del texto a blanco */
+        font-size: 20px !important; /* Cambia el tamaño de la fuente */
+        font-family: $font-family-heading !important; /* Cambia la fuente */
+    }
+    
+    /* Cambiar el color de fondo del enlace activo */
+    .navbar-nav .nav-link.active {
+        background-color: rgba(255, 255, 255, 0.1) !important; /* Cambia el color de fondo */
+        border-radius: 5px !important; /* Añade bordes redondeados al enlace activo */
+    }
+    
+    /* Cambiar el color del enlace activo */
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.active:hover {
+        color:$color-light !important; /* Cambia el color del texto */
+    }
+    .carouselExampleSlidesOnly 
+    {
+        height: 20%;
+    }
+
+
+
+header {
+    font-family: $font-family-heading;
+    font-size:  2rem;
+    text-align: center; 
+   
+}
+h1
+{
+    font-family: $font-family-heading;
+    font-size: medium;
+    color:#929394;
+    margin-left: 15px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    display: block;
+    transform: translate(0px, 0px);
+}
+
+h1:hover
+{
+    color:$color-primary;
+}
+
+/* En tu archivo styles.css */
+body {
+    font-family: $font-family-body;
+    font-size: 10px;
+}
+
+p {
+    font-family: $font-family-heading;
+    font-size: 15px;
+    color: $color-dark;
+   
+}
+
+span
+{
+  
+    color:$color-secondary;
+    
+}
+
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    padding-left: 40px;
+    align-items: center;
+}
+
+main
+{
+    background-color: $color-dark;
+    width: auto;
+    height: 35%;
+    padding: 0;
+}
+/* 
+.izq
+{
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.izq img
+{
+    width: 100%;
+    height: 450px;
+    float: left;
+}
+.der
+{
+        height: 100%;
+    width: 50%;
+    float: right;
+     
+}
+
+.der img
+{
+    width: 100%;
+    height: 450px;  
+    float: right;
+} */
+
+/* Espacio blanco alrededor del carrusel */
+#carouselExampleSlidesOnly {
+    padding-left: 50px; /* Espacio a la izquierda */
+    padding-right: 50px; /* Espacio a la derecha */
+}
+
+/* Ajuste de las imágenes dentro del carrusel */
+.carousel-item img {
+    max-width: 90%; /* Ajusta el tamaño máximo de las imágenes */
+    margin: 0 auto; /* Centra horizontalmente las imágenes */
+    margin-top: 0
+    ;
+}
+
+
+
+.banner
+{
+    background-color: $color-dark;
+    font-family: $font-family-heading;
+    text-decoration: solid;
+    color:$color-light;
+    padding-bottom: 40px;
+    padding-top: 0;
+    align-items: center;
+}
+
+/* Estilo para el banner */
+.banner h5 {
+    color:$color-secondary; /* Color de texto oscuro por defecto */
+    transition: color 0.3s; /* Transición suave para el cambio de color */
+    letter-spacing: 0.1rem;
+}
+
+.banner h5:hover {
+    color:$color-primary; /* Cambia a este color al pasar el mouse */
+}
+
+.historia
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    color:$color-dark;
+    
+}
+
+.serv
+{
+    font-size: 10px;
+    font-family: $font-family-body;
+    display:inline-block
+}
+
+.galeria img
+{
+    background-color:$color-dark;
+    align-items: center;
+    justify-items: center;
+    overflow:auto;
+}
+
+.borde
+{
+    border-top:10px double  black;
+}
+nav ul {
+     padding: 0;
+    margin: 0;
+    font-family: $font-family-heading;
+    font-size: 20px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px; 
+    font-family:$font-family-heading
+    ;
+    font-size: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:$color-dark; 
+}
+
+button
+{
+    color:$color-dark !important;
+    background-color:$color-text !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    align-content: center !important;
+    
+}
+.productos
+ {
+    display: inline-table;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+h5
+{
+    text-align: center;
+    tab-size: auto;
+    font-size-adjust: 10px;
+    font-style:initial;
+    padding-top: 15px;
+}
+h2
+{
+    text-align: center;
+    tab-size: auto;
+    font-size-adjust: 10px;
+   
+}
+.productos img 
+{
+    max-width: 100%; 
+    max-height: 100%; 
+    align-items: center;
+    display:inline-table;
+    
+}
+p
+{
+    text-align: center;
+}
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.producto {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.productos
+{
+    align-items: center;
+    margin: auto;
+        display: flex;
+}
+
+.productos img
+{
+    align-items: center;
+    padding-left: 500px;
+}
+    
+
+footer {
+    background-color: #090909;
+    
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: $color-dark;
+    text-decoration: none;
+}
+
+section {
+    padding: 10px;
+}
+
+.galeria
+{
+    align-items: center;
+    display: flexbox;
+    padding-left: 250px;
+}
+
+.whatsapp img
+{
+    width: 100px;
+    height: 100px;
+    align-items:center;
+}
+
+
+footer {
+    background-image: linear-gradient(to right,rgb(92, 73, 73),rgb(154, 80, 80));
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navegacion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navegacion ul li {
+    display:inline-table;
+    margin-right: 20px;
+}
+
+.navegacion ul li a {
+    color:white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    padding-left: 50px;
+    align-items: center;
+    
+}
+
+.imagenes 
+{
+    display: flex;
+}
+
+.imagenes img {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    margin-left: 100px;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+}
+
+.redes-sociales a {
+    margin-right: 10px;
+}
+
+.redes-sociales img {
+    width: 30px;
+    height: 30px;
+}
+
+.derechos {
+    margin-top: 20px;
+}
+
